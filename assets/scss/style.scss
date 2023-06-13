@@ -96,50 +96,25 @@ a {
     cursor: pointer;
 }
 
+.wrapper{
+    overflow: hidden;
+}
+
 .container {
+    z-index: 2;
     width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
+    padding: 0 20px;
     position: relative;
-
-}
-
-@media (min-width: 768px) {
-
-    .container {
-        width: 648px;
-        padding: 0;
+    @media (min-width: 768px) {
+        padding: 0 60px;
     }
-
-}
-
-@media (min-width: 1024px) {
-
-    .container {
-        width: 864px;
+    @media (min-width: 1024px) {
+        padding: 0 50px;
     }
-
-}
-
-@media (min-width: 1280px) {
-
-    .container {
-        width: 1080px;
+    @media (min-width: 1320px) {
+        padding: 0 120px;
     }
-
-}
-
-@media (min-width: 1400px) {
-
-    .container {
-        width: 1240px;
+    @media (min-width: 1800px) {
+        padding: 0 140px;
     }
-
-}
-
-
-@media (min-width: 1600px) {
-
-    
-
 }
