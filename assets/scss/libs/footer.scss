@@ -1,0 +1,103 @@
+.footer{
+    padding: 30px 0;
+    text-align: center;
+    background: #4A4A4A;
+    .footer_content{
+        div{
+            margin-bottom: 20px;
+        }
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 22px;
+        margin-bottom: 5px;
+    }
+    .politica{
+        font-size: 14px;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 22px;
+        transition: all 0.3s;
+        &:hover{
+            color: #E90000;
+        }
+    }
+    .kossasoft{
+        display: flex;
+        font-size: 14px;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 22px;
+        align-items: center;
+        flex-direction: column;
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        img{
+            width: 180px;
+            margin-top: 8px;
+            transition: all 0.3s;
+        }
+    }
+    @media (min-width: 768px) {
+        text-align: left;
+        .footer_content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            div{
+                margin: 0;
+            }
+        }
+        .kossasoft {
+            align-items: flex-start;
+        }
+    }
+    @media (min-width: 1024px) {
+        .footer_content{
+            div{
+                display: flex;
+                align-items: center;
+            }
+        }
+        p{
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+        .kossasoft {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            img {
+                width: 180px;
+                margin-top: 0;
+                margin-left: 30px;
+            }
+        }
+    }
+    @media (min-width: 1320px) {
+        padding: 50px 0;
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .politica{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .kossasoft{
+            font-size: 16px;
+            line-height: 24px;
+            img{
+                width: 240px;
+            }
+        }
+    }
+    @media (min-width: 1800px) {
+        
+    }
+}

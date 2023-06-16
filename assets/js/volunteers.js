@@ -5,15 +5,6 @@ var $doc = $(document);
 
     $doc.ready(function(){
 
-        $('.partners_slider').slick({
-            speed: 300,
-            infinite: true,
-            slidesToShow: 1,
-            variableWidth: true,
-            nextArrow: '<button class="slick-arrow next"><img src="../img/slider-next.svg"></button>',
-            prevArrow: '<button class="slick-arrow prev"><img src="../img/slider-prev.svg"></button>',
-        });
-
         $('.gallery_slider').slick({
             speed: 300,
             infinite: true,
@@ -31,8 +22,6 @@ var $doc = $(document);
                 }
               ]
         });
-
-        jcf.replaceAll();
 
     });
 
