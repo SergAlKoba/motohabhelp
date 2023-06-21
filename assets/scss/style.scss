@@ -118,3 +118,133 @@ a {
         padding: 0 140px;
     }
 }
+
+
+
+
+
+
+
+
+
+.error{
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    .error_content{
+        width: 300px;
+    }
+    h1{
+        font-size: 120px;
+        font-weight: 900;
+        color: #2d2d2d;
+        margin: 0 0 30px;
+        line-height: 100px;
+    }
+    h2{
+        font-size: 26px;
+        font-weight: 500;
+        color: #2D2D2D;
+        line-height: 32px;
+        position: relative;
+        margin-bottom: 30px;
+        span{
+            display: block;
+            font-weight: 500;
+        }
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #2D2D2D;
+        line-height: 17px;
+        margin-bottom: 38px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .all{
+        width: 177px;
+        height: 45px;
+        margin: 0 auto;
+        display: flex;
+        font-size: 12px;
+        font-weight: 500;
+        color: #212020;
+        line-height: 15px;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        border: 2px solid #212020;
+        transition: all 0.3s;
+        &:hover{
+            color: #FFFFFF;
+            background: #212020;
+            border: 2px solid #212020;
+        }
+    }
+    @media (min-width: 768px) {
+        .error_content{
+            width: 600px;
+        }
+        h1 {
+            font-size: 170px;
+            line-height: 130px;
+        }
+        h2{
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+        .all{
+            width: 219px;
+            height: 57px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+    @media (min-width: 1024px) {
+        p{
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 40px;
+        }
+    }
+    @media (min-width: 1320px) {
+        .error_content{
+            width: 800px;
+        }
+        h1{
+            font-size: 240px;
+            line-height: 200px;
+        }
+        h2{
+            font-size: 50px;
+            line-height: 62px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 17px;
+        }
+        .all{
+            width: 290px;
+            height: 66px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    @media (min-width: 1800px) {
+        h2{
+            font-size: 60px;
+            line-height: 74px;
+            padding-left: 28px;
+            margin-bottom: 50px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
