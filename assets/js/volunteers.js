@@ -23,6 +23,8 @@ var $doc = $(document);
               ]
         });
 
+        jcf.replaceAll();
+
     });
 
     $win.scroll(function() {
