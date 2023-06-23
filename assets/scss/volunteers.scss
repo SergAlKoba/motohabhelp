@@ -87,20 +87,13 @@
                     color: #2D2D2D;
                     line-height: 17px;
                     margin-bottom: 8px;
-                    -webkit-line-clamp: 2; 
-                    display: -webkit-box; 
-                    -webkit-box-orient: vertical; 
-                    overflow: hidden; 
                     &:last-child{
                         margin-bottom: 0;
                     }
                 }
                 article{
                     p{
-                        -webkit-line-clamp: 6; 
-                        display: -webkit-box; 
-                        -webkit-box-orient: vertical; 
-                        overflow: hidden; 
+                   
                     }
                 }
             }
