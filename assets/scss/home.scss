@@ -286,6 +286,320 @@
     }
 }
 
+.about-us {
+    padding: 35px 0;
+    position: relative;
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        .text{
+            order: 1;
+            padding: 24px;
+            background: linear-gradient(90deg, #1E1E1E 0.26%, rgba(56, 56, 56, 0.53) 99.65%);
+            .about-us-title{
+                margin-bottom: 23px;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 64px;
+                    margin-right: 10px;
+                    filter: grayscale(1);
+                }
+                h3{
+                    color: #D9D9D9;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 115.023%;
+                    text-transform: uppercase;
+                }
+            }
+            p{
+                letter-spacing: 0.014em;
+                color: #F8F8F8;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                margin-bottom: 19px;
+            }
+            .more{
+                letter-spacing: .02em;
+                margin-top: 41px;
+                border: 2px solid #D9D9D9;
+                padding: 9px 16px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                transition: all 0.3s;
+                span{
+                    color: #F8F8F8;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%;
+                    transition: all 0.3s;
+                }
+                svg{
+                    width: 20px;
+                    height: 20px;
+                    path{
+                        transition: all 0.3s;
+                    }
+                }
+                &:hover{
+                    background: #D9D9D9;
+                    span{
+                        color: #262626;
+                    }
+                    svg{
+                        path{
+                            stroke: #262626;
+                        }
+                    }
+                }
+            }
+        }
+        .image{
+            order: 2;
+            .logo{
+                display: flex;
+                width: 200px;
+                margin: 40px auto 0;
+                transition: all 0.3s;
+            }
+            .main{
+                display: none;
+            }
+        }
+        &:hover{
+            .image{
+                .logo{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 768px ) {
+        background: #4A4A4A !important;
+        padding: 60px 0;
+        position: relative;
+        .about-content{
+            position: relative;
+            .image{
+                display: flex;
+                justify-content: flex-end;
+                .logo{
+                    position: absolute;
+                    top:50%;
+                    width: 200px;
+                    margin: 0;
+                    right: 50px;
+                    transform: translate(0, -50%);
+                }
+                .main{
+                    width: 599px;
+                    height: 522px;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+            .text{
+                padding: 32px;
+                width: 56.5%;
+                position: absolute;
+                top:50%;
+                left: 0;
+                transform: translate(0, -50%);
+                .about-us-title{
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                }
+                .more{
+                    padding: 13px 16px;
+                }
+            }
+            &:hover{
+                .image{
+                    .logo{
+                        transform: translate(0, -50%) scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1024px ){
+        padding: 79px 0;
+        .about-content{
+            .image {
+                .main {
+                    width: 795px;
+                    height: 599px;
+                }
+                .logo{
+                    right: 94px;
+                    width: 238px;
+                }
+            }
+            .text{
+                width: 55%;
+                .about-us-title {
+                    img {
+                        width: 71px;
+                        margin-right: 24px;
+                    }
+                    h3{
+                        font-size: 24px;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                }
+                .more {
+                    width: 240px;
+                    padding: 13px 22px;
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 98px 0;
+        .about-content{
+            .image {
+                .main {
+                    width: 987px;
+                    height: 673px;
+                }
+                .logo{
+                    width: 320px;
+                }
+            }
+            .text {
+                width: 50%;
+                padding: 32px 25px 32px 32px;
+                .about-us-title{
+                    img {
+                        width: 88px;
+                        margin-right: 24px;
+                    }
+                    h3{
+                        font-size: 28px;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                }
+                .more{
+                    width: 260px;
+                    padding: 14px 24px;
+                    span{
+                        font-size: 18px !important;
+                    }
+                    svg{
+                        width: 23px;
+                        height: 23px;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1700px) {
+        padding: 122px 0;
+        .about-content{
+            .image {
+                .main {
+                    width: 1330px;
+                    height: 801px;
+                }
+                .logo{
+                    width: 391px;
+                }
+            }
+            .text {
+                width: 44%;
+                padding: 41px;
+                .about-us-title{
+                    img {
+                        width: 100px;
+                        margin-right: 24px;
+                    }
+                    h3{
+                        font-size: 32px;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                }
+                .more{
+                    width: 273px;
+                    padding: 14px 24px;
+                    span{
+                        font-size: 20px !important;
+                    }
+                    svg{
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 3200px) {
+        padding: 244px 0;
+        .about-content{
+            .image {
+                .main {
+                    width: 2660px;
+                    height: 1602px;
+                }
+                .logo{
+                    width: 782px;
+                    right: 180px;
+                }
+            }
+            .text {
+                width: 44%;
+                padding: 82px;
+                .about-us-title{
+                    margin-bottom: 46px;
+                    img {
+                        width: 200px;
+                        margin-right: 48px;
+                    }
+                    h3{
+                        font-size: 64px;
+                    }
+                }
+                p{
+                    font-size: 36px;
+                    margin-bottom: 38px;
+                }
+                .more{
+                    margin-top: 82px;
+                    width: 546px;
+                    padding: 28px 48px;
+                    border-width: 4px;
+                    span{
+                        font-size: 40px !important;
+                    }
+                    svg{
+                        width: 56px;
+                        height: 56px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .our_volunteers{
     padding: 60px 0;
     background: #4A4A4A;

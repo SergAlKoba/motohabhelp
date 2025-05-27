@@ -10,8 +10,8 @@ var $doc = $(document);
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
-            nextArrow: '<button class="slick-arrow next"><img src="https://motohabhelp.com.ua/wp-content/themes/kossa/img//slider-next.svg"></button>',
-            prevArrow: '<button class="slick-arrow prev"><img src="https://motohabhelp.com.ua/wp-content/themes/kossa/img//slider-prev.svg"></button>',
+            nextArrow: '<button class="slick-arrow next"><img src="https://motohubhelp.com.ua/wp-content/themes/kossa/img/slider-next.svg"></button>',
+            prevArrow: '<button class="slick-arrow prev"><img src="https://motohubhelp.com.ua/wp-content/themes/kossa/img/slider-prev.svg"></button>',
             responsive: [
                 {
                   breakpoint: 768,
